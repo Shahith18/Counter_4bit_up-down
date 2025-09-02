@@ -206,6 +206,8 @@ It contains statements that map logical library names to their physical director
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
 
 ## Fig 8: Elaboration Launch Option
+<img width="1919" height="1079" alt="Screenshot 2025-09-02 091213" src="https://github.com/user-attachments/assets/ad077af2-f3db-4b25-8008-7dbbd13cec7b" />
+
 
 ### Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
@@ -216,12 +218,18 @@ It contains statements that map logical library names to their physical director
 	Simulation allow to dump design and test bench signals into a waveform 
 
 	Steps for simulation – Run the simulation command with simulator options
+<img width="1917" height="1079" alt="Screenshot 2025-09-02 091727" src="https://github.com/user-attachments/assets/f50b1e0f-496c-409f-ba24-cf70dd05872f" />
 
 ## Fig 9: Design Browser window for simulation
+<img width="1919" height="1079" alt="Screenshot 2025-09-02 091940" src="https://github.com/user-attachments/assets/30c67bd2-1ba7-4169-8e2a-f956acbb577f" />
+
 
 ## Fig 10: Simulation Waveform Window
 
-## Fig 11: Simulation Waveform Window
+
+
+<img width="1609" height="676" alt="Screenshot 2025-09-02 094150" src="https://github.com/user-attachments/assets/5cc8a8d8-b9c3-49b0-9f7a-73035441a202" />
+
 
 ### Result
 

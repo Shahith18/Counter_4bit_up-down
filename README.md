@@ -42,6 +42,9 @@ Functional Simulation:
       
 	After this you can see the window like below 
 
+<img width="1918" height="1078" alt="Screenshot 2025-09-02 084244" src="https://github.com/user-attachments/assets/82c6004f-8f2b-42fe-b9cf-5bcd9e3354ba" />
+
+
 
 ## Fig 2: Invoke the Cadence Environment
 
@@ -56,7 +59,23 @@ Functional Simulation:
 
 ### Verilog code for 4-Bit Up-Down Counter:
 
-*/Program  for  4-Bit Up-Down Counter
+```
+`timescale 1ns / 1ns
+module counter(clk,m,rst,count);
+input clk,m,rst;
+output reg[3:0] count;
+always@(posedge clk or negedge rst)
+begin
+if(!rst)
+count=0;
+else if(m)
+count=count+1;
+else
+count=count-1;
+end
+endmodule
+
+```
 
 	Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
 

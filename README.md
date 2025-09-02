@@ -84,8 +84,34 @@ endmodule
 	Similarly, create your test bench using gedit <filename_tb>.v or <filename_tb>.vhdl to open a new blank document (4bitup_down_count_tb.v).
 
 ### Test-bench code for 4-Bit Up-Down Counter:
-
-*/Test bench Program  for  4-Bit Up-Down Counter
+```
+timescale 1ns / 1ns
+module counter test;
+reg clk,rst,m;
+wire [3:0] count;
+initial
+begin
+clk=0;
+rst=0;#5;
+rst=1;
+end
+initial
+begin
+m=1;
+#160 m=0;
+end
+initial
+begin
+m=1;
+#160 m=0;
+end
+counter counter1 (clk,m,rst, count);
+always #5 clk=clk;
+initial $monitor("Time-%t rst-%b clk=%b count=%b", $time,rst,clk,count);
+initial
+#320 $finish;
+endmodule
+```
 
 ### To Launch Simulation tool
 	linux:/> nclaunch -new&            // “-new” option is used for invoking NCVERILOG for the first time for any design
@@ -93,12 +119,16 @@ endmodule
 	linux:/> nclaunch&                 // On subsequent calls to NCVERILOG
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple step
+<img width="1919" height="1079" alt="Screenshot 2025-09-02 085501" src="https://github.com/user-attachments/assets/7fff50d5-3a01-4d9b-a041-5eaa645974a9" />
+
 
 ## Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
 Click the cds.lib file and save the file by clicking on Save option
+<img width="1919" height="1077" alt="Screenshot 2025-09-02 085553" src="https://github.com/user-attachments/assets/f3e0deb3-421f-437f-88fc-0991abc33a3d" />
+
 
 ## Fig 4: cds.lib file Creation
 
@@ -107,6 +137,8 @@ Click the cds.lib file and save the file by clicking on Save option
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure
 
 	We are simulating verilog design without using any libraries
+
+<img width="1919" height="1079" alt="Screenshot 2025-09-02 085617" src="https://github.com/user-attachments/assets/429f55b7-b672-4b77-baa4-cae3ffbab6e2" />
 
 ## Fig 5: Selection of Don’t include any libraries
 
@@ -117,6 +149,8 @@ Click the cds.lib file and save the file by clicking on Save option
 	Left side you can see the HDL files. Right side of the window has worklib and snapshots directories listed.
 
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
+<img width="1919" height="1079" alt="Screenshot 2025-09-02 085637" src="https://github.com/user-attachments/assets/82ed8038-c209-4e20-8f94-41dd8996393d" />
+
 
 ## Fig 6: Nclaunch Window
 

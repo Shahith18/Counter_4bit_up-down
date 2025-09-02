@@ -206,7 +206,7 @@ It contains statements that map logical library names to their physical director
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
 
 ## Fig 8: Elaboration Launch Option
-<img width="1919" height="1079" alt="Screenshot 2025-09-02 091213" src="https://github.com/user-attachments/assets/ad077af2-f3db-4b25-8008-7dbbd13cec7b" />
+
 
 
 ### Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
@@ -225,9 +225,6 @@ It contains statements that map logical library names to their physical director
 
 
 ## Fig 10: Simulation Waveform Window
-
-
-
 <img width="1609" height="676" alt="Screenshot 2025-09-02 094150" src="https://github.com/user-attachments/assets/5cc8a8d8-b9c3-49b0-9f7a-73035441a202" />
 
 

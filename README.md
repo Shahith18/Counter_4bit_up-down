@@ -2,7 +2,6 @@
 # EXP1: 4 Bit Up-Down Counter - Write Verilog Code and Verify the Functionality using Test-bench ( Use Frontend tool - nclaunch in cadence).
 
 ## Aim:
-
 To write a verilog code for 4bit up/down counter and verify the functionality using Test bench. 
 
 ## Tools used for ASIC Flow:
